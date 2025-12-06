@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAE | Shop at Ease</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: 'var(--color-background)',
+              surface: 'var(--color-surface)',
+              surfaceHighlight: 'var(--color-surface-highlight)',
+              textMain: 'var(--color-text-main)',
+              textMuted: 'var(--color-text-muted)',
+              primary: '#3B82F6',
+              accent: '#8B5CF6',
+              danger: '#EF4444',
+              success: '#10B981',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        /* Light Mode Defaults */
+        --color-background: #F1F5F9;
+        --color-surface: #FFFFFF;
+        --color-surface-highlight: #E2E8F0;
+        --color-text-main: #0F172A;
+        --color-text-muted: #64748B;
+      }
+      
+      :root.dark {
+        /* Dark Mode Defaults */
+        --color-background: #0B0E14;
+        --color-surface: #151A23;
+        --color-surface-highlight: #1E2532;
+        --color-text-main: #FFFFFF;
+        --color-text-muted: #94A3B8;
+      }
+
+      body { 
+        background-color: var(--color-background); 
+        color: var(--color-text-main);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
